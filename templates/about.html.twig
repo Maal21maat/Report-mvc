@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<h1>About</h1>
+
+
+<p class="important">
+
+<img src="img/musik.jpg" width="400px" alt="musik"
+</p>
+
+<p>
+    Sidan om kursen, DV1608 V22 lp4 Objektorienterade webbteknologier, förkortad mvc. Denna sida byggs under kursen, den börjar försiktigt och avancerar för varje vecka. 
+    Kursrepot återfinns på GitHub <a href="{{ absolute_url("https://github.com/dbwebb-se/mvc") }}">Mvc</a>.
+    Kursen har en egen <a href="{{ absolute_url("https://dbwebb.se/kurser/mvc-v2") }}">hemsida</a>.
+</p>
+
+<p>
+    Saxat från kursinformationen: 
+    Kursen tar upp objektorienterade programmeringstekniker i programmeringsspråket PHP. 
+    Klassiska objektorienterade konstruktioner hanteras tillsammans med objektorienterad programmering i webbaserat ramverk tillsammans med databaser samt enhetstestning.
+</p>
+
+
+
+<p>Har du lust att kolla ditt lyckonummer?</p>
+<p>Run the <a href="{{ path("lucky-number") }}">Lucky-number lottery</a>.</p>
+
+
+{% endblock %}
+
+
+

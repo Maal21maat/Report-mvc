@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+
+
+    <body>
+        <div class="siteheader">
+            Bakom mina glasögon
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="{{ url("home") }}">Home</a></li>
+                    <li><a href="{{ path("about") }}">About</a></li>
+                    <li><a href="{{ path("report") }}">Report</a></li>
+                    <li><a href="{{ path("debug") }}">Debug</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        {% block content %}
+        Default content
+        {% endblock %}
+
+        <div class="sitefooter">
+            Copyright 2022 Maat21 (maat21@student.bth.se)
+        </div>
+
+    </body>
+</html>

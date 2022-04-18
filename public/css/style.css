@@ -1,0 +1,93 @@
+
+html {
+    background-color: cornflowerblue;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;     /* Always display scrollbar, no hopping pages */
+    font-size: 18px;
+
+    margin: 0px auto; /* 0px för nav */
+    max-width: 1200px;
+
+
+}
+
+.navbar {
+    border: 2px solid darkblue;
+    background-color: none;
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+    width: 10%;
+    color: darkblue;
+
+}
+
+
+.sitefooter {
+    border: 2px solid darkblue;
+    background-color: none;
+    margin-bottom: 8px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    color: darkblue;
+
+}
+
+
+
+.siteheader {
+    color: darkblue;
+    text-align: center;
+
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+
+    padding: 1em;
+    margin-bottom: 4px;
+
+    height: 90px;
+}
+
+/* bilder */
+
+figure {
+    padding: 5px;
+}
+
+figure.center {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figure.center img {
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+    padding-top: 0.5em;
+}
+
+figure.left {
+    float: left;
+    margin-left: 0;
+}
+
+figure.right {
+    float: right;
+    margin-right: 0;
+}
