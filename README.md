@@ -1,6 +1,6 @@
 Symfony Report i MVC
 ============================
-Samlade dokumentation om kmoms
+Samlade dokumentation om kmoms, just nu endast uppstart
 
 
 
@@ -48,54 +48,3 @@ Twig extensions
 <p><a href="{{ absolute_url("img/mos.png") }}">View the image</p>
 ```
 
-
-
-Favicon
-----------------------------
-
-```
-wget https://dbwebb.se/favicon.ico -O public/favicon.ico
-```
-
-```
-<link rel="icon" href="favicon.ico">
-```
-
-
-
-Markdown
-----------------------------
-
-[markdown_to_html](https://twig.symfony.com/doc/3.x/filters/markdown_to_html.html)
-
-```
-composer require twig/markdown-extra league/commonmark
-```
-
-```
-{% apply markdown_to_html %}
-Report
-======
-
-This is the reports from each kmom.
-{% endapply %}
-
-
-{{ include('report/kmom01.markdown.twig')|markdown_to_html }}
-```
-
-
-
-Git
-----------------------------
-
-
-
-With docker
-----------------------------
-
-docker-compose run php81 composer create-project symfony/skeleton me/report
-
-cp example/symfony/docker-compose.yaml me/report/
-cd me/report
-docker-compose run php81 composer require annotations twig webapp twig/markdown-extra league/commonmark
