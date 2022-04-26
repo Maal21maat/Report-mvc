@@ -1,37 +1,32 @@
 Symfony Report i MVC
 ============================
-Samlade dokumentation om kmoms, just nu endast uppstart
 
+Kolla lokalt:
+php -S localhost:8888 -t public
+```
+Publicera:
+dbwebb publishpure report
+
+Samlade dokumentation om kmoms
+
+Om publiceringen slutar i error 500:
+----------------------------
+Publicera dina filer igen.
+
+Kör sedan kommandot:
+dbwebb run "cd www/dbwebb-kurser/mvc/me/report; composer dumpautoload"
+Stå i me eller me/report
 
 
 Uppstart av me/report mhh föreläsning
 ----------------------------
 
 Stå i mvc:
-
-```
 composer create-project symfony/skeleton me/report
 cp example/symfony/.htaccess me/report/public/
-dbwebb publishpure report
-```
-
-Kolla lokalt:
-php -S localhost:8888 -t public
-```
 
 stå i: cd me/report
 composer require annotations twig webapp
-```
-
-Kopiera controller with the routes:
-
-Stå i: me/report
-cp ../../example/symfony/LuckyControllerTwig.php src/Controller/ReportController.php
-cp ../../example/symfony/lucky_number.html.twig templates/about.html.twig
-cp ../../example/symfony/lucky_number.html.twig templates/home.html.twig
-cp ../../example/symfony/lucky_number.html.twig templates/report.html.twig
-
-
 
 
 Twig extensions
