@@ -7,6 +7,11 @@ php -S localhost:8888 -t public
 Publicera:
 dbwebb publishpure report
 
+Fixat kod,
+PHP Coding Standards Fixer (kör nedan från me/report)
+tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src
+
+
 Samlade dokumentation om kmoms
 
 Om publiceringen slutar i error 500:
