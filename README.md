@@ -7,9 +7,25 @@ php -S localhost:8888 -t public
 Publicera:
 dbwebb publishpure report
 
+Genvägar kodfix nedan
+composer csfix
+composer phpcs
+composer phpcbf
+
 Fixat kod,
-PHP Coding Standards Fixer (kör nedan från me/report)
+PHP Coding Standards Fixer (kör nedan från me/report) - symfony specifik
 tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src
+
+PHPDCodesnifffer (kör från me/report) - mer generell
+Kollar:
+tools/php-codesniffer/vendor/bin/phpcs -h
+Fixar:
+tools/php-codesniffer/vendor/bin/phpcbf -h
+
+Kollar:
+tools/php-codesniffer/vendor/bin/phpcs --standard=PSR12 src
+Fixar:
+tools/php-codesniffer/vendor/bin/phpcbf --standard=PSR12 src
 
 
 Samlade dokumentation om kmoms
