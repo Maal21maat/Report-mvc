@@ -26,7 +26,7 @@ class DiceController extends AbstractController
     }
 
     /**
-     * @Route("/diceroll{numRolls}", name="dice-roll")
+     * @Route("/dice/roll/{numRolls}", name="dice-roll")
      */
     public function roll(int $numRolls): Response
     {

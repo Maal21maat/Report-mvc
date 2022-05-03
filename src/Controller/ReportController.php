@@ -63,15 +63,4 @@ class ReportController extends AbstractController
         return $this->render('debug.html.twig', $data);
     }
 
-    /**
-     * @Route("/formsearch", name="form-search")
-     */
-    public function search(Request $request): Response
-    {
-        $data = [
-            'search' => $request->query->get('search'),
-        ];
-
-        return $this->render('form/search.html.twig', $data);
-    }
 }

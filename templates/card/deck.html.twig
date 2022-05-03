@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Deck{% endblock %}
+
+{% block content %}
+<h1>Card</h1>
+
+<p>Hela kortleken, sorterad {{ deck_value }}.</p>
+
+<p>Åter till <a href="{{ path("card-home") }}"> startsida för kort</a>.</p>
+
+{% endblock %}

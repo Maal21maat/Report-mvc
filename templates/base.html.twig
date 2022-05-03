@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="favicon.ico"/>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="icon" href="{{ asset("favicon.ico") }}"/>
+        <link rel="stylesheet" href="{{ asset("css/style.css") }}"/>
     </head>
 
     <body>
@@ -19,9 +19,7 @@
                     <li><a href="{{ path('about') }}">About</a></li>
                     <li><a href="{{ path('report') }}">Report</a></li>
                     <li><a href="{{ path('debug') }}">Debug</a></li>
-                    <li><a href="{{ path('form-search') }}">Search</a></li>
-                    <li><a href="{{ path('dice-home') }}">Dice</a></li>
-                    <li><a href="{{ path('dice-graphic-home') }}">DiceGraphic</a></li>
+                    <li><a href="{{ path('card-home') }}">Card</a></li>
                 </ul>
             </nav>
         </div>

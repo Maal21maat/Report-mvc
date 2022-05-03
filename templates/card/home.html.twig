@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Card{% endblock %}
+
+{% block content %}
+<h1>Card</h1>
+
+<p>Samlingssida för kmom02 och kortleken.</p>
+
+<p>Spana på <a href="{{ path("card-deck") }}">Sorterad Kortlek</a>.</p>
+<p>Snurra till det på <a href="{{ path("card-shuffle") }}">Blandad Kortlek</a>.</p>
+
+
+{% endblock %}
